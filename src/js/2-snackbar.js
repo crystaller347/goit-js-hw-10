@@ -10,11 +10,10 @@ formOfDalay.addEventListener('submit', event => {
 
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log(timer, radio );
       if (radio ==="fulfilled") {
-        resolve();
+        resolve(timer);
       } else {
-        reject();
+        reject(timer);
       }
     }, timer);
   });
