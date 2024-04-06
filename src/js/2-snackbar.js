@@ -1,16 +1,16 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-const formOfDalay = document.querySelector(".form");
+const delayForm = document.querySelector(".form");
 
-formOfDalay.addEventListener('submit', event => {
+delayForm.addEventListener('submit', event => {
   event.preventDefault();
   const timer = event.currentTarget.elements.delay.value;
   const radio = event.currentTarget.elements.state.value;
 
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (radio ==="fulfilled") {
+      if (radio === "fulfilled") {
         resolve(timer);
       } else {
         reject(timer);
