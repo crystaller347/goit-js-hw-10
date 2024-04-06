@@ -20,20 +20,26 @@
 }
 
 button {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #989898;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 4%;
+  text-align: center;
   border-radius: 8px;
-  padding: 8px 16px;
-  width: 75px;
-  height: 40px;
-  background: #cfcfcf;
+  background: rgb(78, 117, 255);
   border: none;
   margin-left: 0;
   margin-bottom: 0;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+}
+
+button:disabled {
+  color: #989898;
+  background: #cfcfcf;
 }
 
 .timer {
